@@ -10,6 +10,7 @@ env:
   WORKFLOW_VAR: 'I am a workflow env var'
   OVERWRITTEN: 'I will be overwritten'
   UNDEFINED_VAR_WITH_DEFAULT: ${{ vars.UNDEFINED_VAR || 'default value' }}
+  DEV_TARGET_VAR: ${{ vars.TARGET_VAR || 'default dev target' }}
 
 # Pokazać ze zmienne są dziedziczone i nadpisywane oraz e w zaleności gdzie śa zdefiniowane tam sa dostępne.
 # CW08_01
